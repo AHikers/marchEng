@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-9gsz8t3e70f0caa9 --n lbs_server --r --project "/Users/one/Desktop/aiProject/marchEng" --report_first --report

@@ -1,0 +1,14 @@
+{
+  "name": "eng-read",
+  "version": "1.0.0",
+  "description": "## 项目介绍 本项目是一个实用的拍照学习英语的应用，支持英文识别、翻译与发音。",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "hrw",
+  "license": "ISC",
+  "dependencies": {
+    "weui-miniprogram": "^1.2.3"
+  }
+}

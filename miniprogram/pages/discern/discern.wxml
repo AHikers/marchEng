@@ -1,0 +1,39 @@
+<!--pages/discern/discern.wxml-->
+<!-- <view style="height: 120rpx;"></view> -->
+<!-- <canvas id="image-canvas" type="2d" style='width:{{width}}px;height:{{image_height}}px'></canvas> -->
+<canvas canvas-id="image-canvas" style='width:{{width}}px; height:{{windowHeight-130}}rpx;margin-top:{{canvas_top}}rpx;'></canvas>
+<view class="frame">
+  <text style="color:blue;font-size:40rpx">识别结果</text>
+  <view class="result">
+    <textarea value="{{discernEngResult}}" auto-height class="phone_input" bindinput="modReconigeInput" />
+
+    <!-- <text class="result_text">{{discernEngResult}}</text> -->
+    <view style="font-size: 30rpx;" wx:if="{{!!discernCnResult}}">翻译：</view>
+    <text class="result_text" wx:if="{{!!discernCnResult}}">{{discernCnResult}}</text>
+      <text class="none_phone" wx:if="{{showNoneResult}}">未识别到英文</text>
+  </view>
+  <text class="result_text" style="font-size:25rpx;" wx:if="{{!!discernCnResult}}">识别结果可点击对应区域修改</text>
+  <button class="mainbtn" bindtap="speechEngText">发音</button>
+
+  <view>
+    <image src="{{filePath}}" mode="widthFix"></image>
+  </view>
+
+  <view wx:if="{{showResult}}">
+    <text style="color:blue;">用户标记</text>
+    <view class="mark" style="border-color: #fdb383">
+      <view wx:for="{{userMark}}" wx:for-item="item">
+        <text class="el-tag" bindtap="submitMark">{{item.name+'('+item.count+')'}}</text>
+      </view>
+      <text class="mark_tips" wx:if="{{showMarkTips}}">暂无用户提交标记</text>
+    </view>
+
+    <text style="color:blue;">提交标记</text>
+    <view class="mark">
+      <view wx:for="{{markList}}" wx:for-item="item">
+        <text class="el-tag" bindtap="submitMark" data-id="{{item.index}}">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>

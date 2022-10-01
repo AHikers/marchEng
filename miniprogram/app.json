@@ -1,0 +1,26 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/discern/discern",
+    "pages/camera/camera"
+	],
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置展示"
+		}
+	},
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "哪里不会扫哪里",
+		"navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.5",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}

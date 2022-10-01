@@ -1,0 +1,20 @@
+<camera device - position="width" flash="off" style="height:{{height}}px;">
+  <cover-view class='camerabgImage-view'>
+     <!-- <cover-image class='bgImage' src='../images/bg2.png'> </cover-image>  -->
+     <cover-view class='cameraTips'>请对准英文段落扫描</cover-view>
+    <cover-view class='effectBox'>
+      <cover-view class='left'></cover-view>
+      <cover-view class='middle'></cover-view>
+      <cover-view class='right'></cover-view>
+    </cover-view>
+    <cover-view class="bottom-bg" style="height: {{height-150}}px;"></cover-view>
+    <cover-view class="cameraBgView">
+      <cover-image class='cancelphoto' src='../images/cancelPhoto2.png' bindtap='cancelPhoto'></cover-image>
+      <cover-view class='cameraButton-view'>
+        <cover-image class='takephoto' src='../images/takephoto.png' bindtap='takePhoto'></cover-image>
+      </cover-view>
+    </cover-view>
+
+  </cover-view>
+
+</camera>

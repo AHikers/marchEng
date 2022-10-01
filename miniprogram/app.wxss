@@ -1,0 +1,8 @@
+/*引入weui库*/
+@import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+
+Page{
+  --mb-color:#353535;
+  --zb-color:#505050;
+  --lb-color:#808080;
+}

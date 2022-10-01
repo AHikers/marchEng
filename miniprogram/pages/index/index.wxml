@@ -1,0 +1,4 @@
+<image class="topimg" src="../../asset/top.svg"></image>
+<view class="title">拍照学英语</view>
+<view class="tips">提供拍照自动识别英文句子并翻译成对应的中文，支持英文发音，可用于教小孩子学英语</view>
+<button class="mainbtn" bindtap="tomap">拍照学英语</button>
